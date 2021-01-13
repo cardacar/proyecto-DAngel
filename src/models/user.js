@@ -29,6 +29,7 @@ userSchema.method('encryptPassword', async function(password){
     return await bcrypt.hash(password, salt);
 });
 
+//Match de la contraseña
 userSchema.method('match', async function(password){
     return await bcrypt.compare(password, this.password)
 });
