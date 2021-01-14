@@ -23,6 +23,10 @@ const productSchema = new Schema({
         required: true,
         trim: true
     },
+    img: {
+        type: String,
+        default: 'None'
+    },
     colorDis: [String],
     categoria: [String],
     tallaDis: [String]
