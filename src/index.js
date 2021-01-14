@@ -32,6 +32,9 @@ app.use(express.urlencoded({ extended: false }));
 
 //Routes
 app.use(require('./routes/index.route'));
+app.use(require('./routes/user.route'));
+app.use(require('./routes/productDes.route'));
+
 
 
 //Static files
