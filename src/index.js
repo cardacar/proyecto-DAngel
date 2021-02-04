@@ -25,6 +25,8 @@ app.set('view engine', '.hbs');
 app.use(morgan('dev'));
 //Entendiendo los datos enviados por un formulario
 app.use(express.urlencoded({ extended: false }));
+//Modulo que permite el entendimiento de json
+app.use(express.json());
 
 
 //Global variables

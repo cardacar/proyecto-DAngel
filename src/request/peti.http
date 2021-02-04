@@ -1,0 +1,21 @@
+POST http://localhost:3000/product/newProduct
+Content-Type: application/json
+
+{
+    "codigo" : 1,
+    "nombre" : "pantalon",
+    "cantidad" : 123,
+    "precioU" : 123,
+    "img": "img1",
+    "colorDis" : ["negro", "rojo"],
+    "categoria" : ["dama", "verano"],
+    "tallaDis": ["M", "L"]
+}
+
+###
+POST http://localhost:3000/product/newProduct
+Content-Type: application/json
+
+{
+    "hola" : "hola mundo"
+}
